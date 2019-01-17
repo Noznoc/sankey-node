@@ -6,9 +6,8 @@ This is template code for developing a d3.js sankey diagram web app.
 
 1) Clone the repo to your local computer
 2) Go to the folder directory from the command line or terminal and enter `npm install` to install the dependencies
-3) Once dependencies are installed, in `public/javascripts/socket.js` update the `socket` variable to have the correct IP. If you are unsure of your IP, in the command line or terminal, enter `ipconfig`
 4) Enter `npm start` to run the app
-5) Now that the app is running, in your browser enter `http://localhost:3010` or `http:[IP]:3010` to share externally
+5) Now that the app is running, in your browser enter `http://localhost:3000` or `http:[IP]:3010` to share externally
 
 ## Development
 
