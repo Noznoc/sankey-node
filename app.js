@@ -3,15 +3,14 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-var data = require('./sankey.json');
+/*var data = require('./sankey.json');*/
 
 var indexRouter = require('./routes/index');
 
 var app = express();
 var server = require('http').Server(app);
-var io = require('socket.io')(server);
-console.log("Socket IO Server Connected");
-server.listen(90);
+/*var io = require('socket.io')(server);
+server.listen(90);*/
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -25,9 +24,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 
-io.on('connection', function (socket) {
+/*io.on('connection', function (socket) {
 	socket.emit('data', data);
-});
+});*/
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

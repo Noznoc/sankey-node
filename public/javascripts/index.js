@@ -1,6 +1,7 @@
-socket.on('data', function (graph) {
-
-  var units = "Widgets";
+$(document).ready(function() {  
+  
+  var graph = getData(),
+      units = "Widgets";
 
   // set the dimensions and margins of the graph
   var margin = {top: 10, right: 10, bottom: 10, left: 10},
@@ -100,5 +101,4 @@ socket.on('data', function (graph) {
     sankey.relayout();
     link.attr("d", path);
   }
-
 });
